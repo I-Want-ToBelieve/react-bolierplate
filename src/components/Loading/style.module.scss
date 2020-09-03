@@ -1,0 +1,55 @@
+/*https://codepen.io/ahmedelmsery/pen/zZVLMN*/
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+    box-shadow: 0 15px 0 #60cbff;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.container {
+  background: #0b1621;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.back {
+  margin: 1em auto;
+  span {
+    font-size: 3em;
+    color: #60cbff;
+    background: #1c242d;
+    display: table-cell;
+    box-shadow: inset 0 0 5px #0b1621, 0 5px 0 #557091;
+    padding: 0 15px;
+    line-height: 100px;
+    animation: jump 2s infinite;
+    &:nth-child(1) {
+      animation-delay: 0s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(6) {
+      animation-delay: 0.5s;
+    }
+    &:nth-child(7) {
+      animation-delay: 0.6s;
+    }
+  }
+}
